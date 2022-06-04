@@ -195,6 +195,7 @@ footer .social img{
     grid-row: 5/8;
     width: 100%;
     box-shadow: 5px 5px 10px #6f7364; 
+    
 }
 main section img{
     box-sizing: border-box;
@@ -202,6 +203,10 @@ main section img{
 nav{
     display: flex;
     justify-content:space-around ;
+}
+.msg:hover{
+    transition: transform .5s;
+    transform: scale(1.1);
 }
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
