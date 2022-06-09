@@ -82,16 +82,16 @@ p {
 }
 
 .primary {
-  background-color: var(--primary-color);
+  background-color: #ad2318;
 }
 .secondary {
-  background-color: var(--secondary-color);
+  background-color: #2c6098;
 }
 .accent1 {
-  background-color: var(--accent1-color);
+  background-color: #e5e5f0;
 }
 .accent2{
-  background-color: var(--accent2-color);
+  background-color: #000000;
 }
 
 p.colored {
@@ -100,7 +100,7 @@ p.colored {
 }
 
 nav {
-  background-color: var(--nav-background-color);
+  background-color: #ad2318;
   line-height: 3em;
   text-align: center;
   font-size: 1.2em;
