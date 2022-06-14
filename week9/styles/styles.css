@@ -1,0 +1,33 @@
+body{
+    height:100%;
+    text-align: center;
+}
+header{
+    margin-top: -9px;
+    margin-bottom: 30px;
+}
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color:darkslateblue;
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+    border-color: 2px solid yellow;
+}
+.read, .views, .comments{
+    margin: -20px;
+    padding: 10px;
+}
+.p1{
+    color:darkslateblue;
+}
+.p2{
+    color: grey
+}
+.hero-image{
+    width:100%;
+}
+
+
+
