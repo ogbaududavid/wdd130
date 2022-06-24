@@ -9,7 +9,7 @@
 }
 #hero-msg{
     background-color: gray;
-    padding: 20 px;
+    padding: 20px;
     grid-column: 2/3;
     grid-row: 1/2;
     margin-top: 100px;
