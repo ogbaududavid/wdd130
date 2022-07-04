@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link type="text/css" rel="stylesheet" href="styles/slides.css">
+    <link type="text/css" rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home Page</a>
+            <a href="mercedez.html">Mercedez</a>
+            <a href="toyota.html">Toyota</a>
+        </nav>
+        <a href="index.html">
+            <img class="logo-img" src="photos/cobra-cars.png" alt="cobra-cars logo">
+        </a>
+    </header>
+    <main>
+        <div class="container">
+                <div class="mySlides">
+                    <div class="numbertext">1 / 5</div>
+                    <img src="photos/cobra-cars.png" style="width: 100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">2 / 5</div>
+                    <img src="photos/toyota.jpeg" style="width: 100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">3 / 5</div>
+                    <img src="photos/toyota2.jpeg" style="width: 100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">4 / 5</div>
+                    <img src="photos/benz3.jpeg" style="width: 100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">5 / 5</div>
+                    <img src="photos/benz4.jpeg" style="width: 100%">
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclikc="plusSLIDES(1)">&#10095;</a>
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <img class="demo cursor" src="photos/cobra-cars.png" style="width: 100%" onclick="currentSlide(1)" alt="Cobra Cars Logo">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="photos/toyota.jpeg" style="width: 100%" onclick="currentSlide(2)" alt="Toyota car">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="photos/toyota2.jpeg" style="width: 100%" onclick="currentSlide(3)" alt="Toyota car">
+                    </div>
+                    <div class="column">
+                        <img class="demo cusor" src="photos/benz3.jpeg" style="width: 100%" onclick="currentSlide(4)" alt="mercedes benz">
+                    </div>
+                    <div class="column">
+                        <img class="demo cusor" src="photos/benz4.jpeg" style="width: 100%" onclick="currentSlide(5)" alt="mercedes benz"> 
+                    </div>
+                </div>
+        </div>
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("demo");
+              let captionText = document.getElementById("caption");
+              if (n > slides.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";
+              dots[slideIndex-1].className += " active";
+              captionText.innerHTML = dots[slideIndex-1].alt;
+            }
+            </script>
+          
+    </main>
+    <footer>
+            <div>
+                <p>Cobra-cars &copy;2022 </p>
+            </div>
+            <div>
+                <a href="site-plan.html"><p>Site Plan</p></a>
+            </div>
+            <div>
+                <a href="contactus.html"><p>Contact Us</p></a>
+            </div>
+            <div class="socials">
+                <a href="https://twitter.com">
+                <img src="photos/twitter.png" alt="twitter logo">
+                </a>
+                <a href="https://web.facebook.com">
+                <img  src="photos/facebook.png" alt="facebook logo">
+                 </a>
+                 <a href="https://www.instagram.com">
+                <img src="photos/instagram.png" alt="instagram lofo">
+                </a>
+            </div>
+    </footer>    
+</body>
+</html>
